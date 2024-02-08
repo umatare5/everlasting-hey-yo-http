@@ -1,0 +1,8 @@
+FROM busybox:glibc
+
+WORKDIR /app
+
+COPY hey-yo-http /bin/
+
+EXPOSE 8080
+ENTRYPOINT ["/bin/hey-yo-http"]
