@@ -62,7 +62,7 @@ The application supports the following environment variables:
 | Name              | Description                                                                         |
 | ----------------- | ----------------------------------------------------------------------------------- |
 | `PORT`            | The port number to listen on. Default is `8080`.                                    |
-| `BE_QUITE`        | If set to any value, the application silences "Hey, Yo!" every second.              |
+| `BE_QUIET`        | If set to any value, the application silences "Hey, Yo!" every second.              |
 | `GIVE_ME_PATTERN` | If set to any value, the application says "Check It Out! Yo!" with 50% of the time. |
 
 - Example
