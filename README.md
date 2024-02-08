@@ -86,7 +86,12 @@ Download from [release page](https://github.com/umatare5/everlasting-hey-yo-http
 
 - The application works on `linux_amd64`, `linux_arm64`, `darwin_amd64`, `darwin_arm64` and `windows_amd64`.
 
-Use a command `./hey-yo-http` to run the binary.
+> [!TIP]
+> Run the application with the following command.
+>
+> ```shell
+> ./hey-yo-http
+> ```
 
 ## Development
 
