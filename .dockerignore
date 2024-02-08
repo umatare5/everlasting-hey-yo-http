@@ -1,4 +1,5 @@
+dist/
+scripts/
 Dockerfile
+Dockerfile.goreleaser
 README.md
-.github
-.mergify.yml
