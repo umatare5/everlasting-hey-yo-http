@@ -29,9 +29,7 @@ Hey, Yo!
 ```
 
 > [!TIP]
-> This application is also available the binaries.
->
-> Download from [release page](https://github.com/umatare5/everlasting-hey-yo-http/releases).
+> The application is also available the binaries. Please download them from [release page](https://github.com/umatare5/everlasting-hey-yo-http/releases).
 >
 > - The application works on `linux_amd64`, `linux_arm64`, `darwin_amd64`, `darwin_arm64` and `windows_amd64`.
 >
