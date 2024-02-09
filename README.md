@@ -28,6 +28,25 @@ Hey, Yo!
 ...
 ```
 
+> [!TIP]
+> This application is also available the binaries.
+>
+> Download from [release page](https://github.com/umatare5/everlasting-hey-yo-http/releases).
+>
+> - The application works on `linux_amd64`, `linux_arm64`, `darwin_amd64`, `darwin_arm64` and `windows_amd64`.
+>
+> Run the application with the following command.
+> 
+> ```shell
+> ./hey-yo-http
+> ```
+
+## Signal Handling
+
+The application traps a `SIGTERM` and a `SIGKILL`.
+
+### `SIGTERM`
+
 - When receive a `SIGTERM`, the application repeats "Hey" 3 times as follows.
 
   ```shell
@@ -38,6 +57,8 @@ Hey, Yo!
   ...
   ```
 
+### `SIGKILL`
+
 - When receive a `SIGKILL`, the application will be stopped.
 
   ```shell
@@ -47,7 +68,7 @@ Hey, Yo!
   'hey-yo-http' terminated by signal SIGKILL (Forced quit)  # << Send "SIGKILL"
   ```
 
-## Environment Variables
+## Supported Environment Variables
 
 The application supports the following environment variables:
 
@@ -56,7 +77,7 @@ The application supports the following environment variables:
 | `BE_QUIET`        | If set to any value, the application silences "Hey, Yo!" every second.              |
 | `GIVE_ME_PATTERN` | If set to any value, the application says "Check It Out! Yo!" with 50% of the time. |
 
-- Example
+- For Example,
 
   ```shell
   $ docker run -e GIVE_ME_PATTERN=1 ghcr.io/umatare5/everlasting-hey-yo-http
@@ -70,19 +91,6 @@ The application supports the following environment variables:
   Hey, Yo!
   Check It Out! Yo!
   ```
-
-## Binaries
-
-Download from [release page](https://github.com/umatare5/everlasting-hey-yo-http/releases).
-
-- The application works on `linux_amd64`, `linux_arm64`, `darwin_amd64`, `darwin_arm64` and `windows_amd64`.
-
-> [!TIP]
-> Run the application with the following command.
->
-> ```shell
-> ./hey-yo-http
-> ```
 
 ## Development
 
