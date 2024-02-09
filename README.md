@@ -75,20 +75,20 @@ The application supports the following environment variables:
 | `BE_QUIET`        | If set to any value, the application silences "Hey, Yo!" every second.              |
 | `GIVE_ME_PATTERN` | If set to any value, the application says "Check It Out! Yo!" with 50% of the time. |
 
-- For Example,
+To launch a docker container with user-defined environment variables, run the following command:
 
-  ```shell
-  $ docker run -e GIVE_ME_PATTERN=1 ghcr.io/umatare5/everlasting-hey-yo-http
-  Starting HTTP server on port 8080
-  Check It Out! Yo!
-  Hey, Yo!
-  Hey, Yo!
-  Hey, Yo!
-  Hey, Yo!
-  Check It Out! Yo!
-  Hey, Yo!
-  Check It Out! Yo!
-  ```
+```shell
+$ docker run -e GIVE_ME_PATTERN=1 ghcr.io/umatare5/everlasting-hey-yo-http
+Starting HTTP server on port 8080
+Check It Out! Yo!
+Hey, Yo!
+Hey, Yo!
+Hey, Yo!
+Hey, Yo!
+Check It Out! Yo!
+Hey, Yo!
+Check It Out! Yo!
+```
 
 ## Development
 
