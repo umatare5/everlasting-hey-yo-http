@@ -14,14 +14,6 @@ A simple HTTP server that everlasting says "Hey, Yo!" every second in the backgr
 > - `everlasting-hey-yo` was created to test signal reception from an ECS Task.
 > - `everlasting-hey-yo-http` was created to test signal reception from a Cloud Run Service.
 
-## Motivation
-
-Cloud Run automatically restarts the instance by `SIGKILL` 10 seconds after sending a `SIGTERM`.
-
-- [https://cloud.google.com/run/docs/container-contract#instance-shutdown](https://cloud.google.com/run/docs/container-contract#instance-shutdown)
-
-I needed to measure the differences by each region and the resources assigned to it, using an application that continues to batch process.
-
 ## Installation
 
 ```shell
@@ -94,6 +86,14 @@ Download from [release page](https://github.com/umatare5/everlasting-hey-yo-http
 
 ## Development
 
+### Motivation
+
+Cloud Run automatically restarts the instance by `SIGKILL` 10 seconds after sending a `SIGTERM`.
+
+- [https://cloud.google.com/run/docs/container-contract#instance-shutdown](https://cloud.google.com/run/docs/container-contract#instance-shutdown)
+
+I needed to measure the differences by each region and the resources assigned to it, using an application that continues to batch process.
+
 ### Commands
 
 | Command             |                                                   |
@@ -107,8 +107,8 @@ Please use [./scripts/deploy_to_cloud_run.sh](./scripts/deploy_to_cloud_run.sh).
 
 - This script deploys a service to the active project in gcloud.
 - The service will be launched in both `asia-northeast1` and `asia-northeast2`.
-- The service will be set up with a minimum resource allocation of 10 services per region.
-- In `asia-northeast1`, a service will be set up with 4 CPU cores and 16GB of memory.
+- 10 services per region will be set up with a minimum resource allocation.
+- 1 service per region will be set up with 4 CPU cores and 16GB of memory.
 
 As a result, the services are created as follows:
 
